@@ -1,0 +1,47 @@
+{
+  "name": "nodejs-mongo-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "start:dev": "cross-env NODE_ENV=development nodemon index",
+    "start:debug": "cross-env NODE_ENV=development nodemon inspect index",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js",
+    "format:write": "npx prettier --write \"src/**/*.js\" --ignore-path ./.prettierignore",
+    "format:check": "npx prettier --check \"src/**/*.js\" --ignore-path ./.prettierignore"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^6.3.0",
+    "helmet": "^5.0.2",
+    "hpp": "^0.2.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.2.7",
+    "multer": "^1.4.4",
+    "sharp": "^0.30.3",
+    "swagger-ui-express": "^4.3.0",
+    "winston": "^3.6.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.11.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.6.0"
+  }
+}
