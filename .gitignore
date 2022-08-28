@@ -51,10 +51,12 @@ Thumbs.db
 *.wmv
 
 # ENV
-.env.development
+.env
 .env.local
-.env.staging
 .env.production
+.env.qa
+.env.staging
+.env.development
 
 # Package-lock
 package-lock.json
